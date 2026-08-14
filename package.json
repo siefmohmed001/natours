@@ -8,7 +8,7 @@
     "start:prod": "cross-env NODE_ENV=production node server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
-    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
   },
   "author": "Jonas Schmedtmann",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "@babel/polyfill": "^7.4.4",
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
+    "compression": "^1.8.1",
     "cookie-parser": "^1.4.4",
     "cross-env": "^10.1.0",
     "dotenv": "^7.0.0",
